@@ -4,7 +4,7 @@ import sqlite3
 import pandas as pd   
 import matplotlib.pyplot as plt 
 from datetime import datetime 
-   
+    
 # ---------- DATABASE ---------- 
 def init_db():
     conn = sqlite3.connect("expenses.db")
