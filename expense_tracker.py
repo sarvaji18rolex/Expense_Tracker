@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime       
          
 # ---------- DATABASE ----------     
-def init_db():  
+def init_db():   
     conn = sqlite3.connect("expenses.db")
     c = conn.cursor()
     c.execute("""CREATE TABLE IF NOT EXISTS expenses (
