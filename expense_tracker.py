@@ -7,7 +7,7 @@ from datetime import datetime
          
 # ---------- DATABASE ----------       
 def init_db():   
-    conn = sqlite3.connect("expenses.db")
+    conn = sqlite3.connect("expenses.db") 
     c = conn.cursor()
     c.execute("""CREATE TABLE IF NOT EXISTS expenses (
                     id INTEGER PRIMARY KEY AUTOINCREMENT, 
